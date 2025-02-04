@@ -34,6 +34,9 @@ p{
     font-family: Oswald;
     font-size: 24px;
 }
+.timepanel .day{
+    color: #009344;
+}
 .timepanel img{
     padding-left: 1416px;
 }
@@ -89,17 +92,30 @@ p{
     color: #009344;
 }
 
-.slide{
+.slider{
+    display: flex;
     height: 500px;
     background-color: #C4C4C4;
-}
-.slider{
-    margin-left: 340px;
+    padding-left: 235px;
+    padding-right: 235px;
     vertical-align: top;
 }
+.slidebt{
+    display: flex;
+    align-items: center;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    margin-left: 77px;
+}
+.txts{
+    width: 727px;
+    display: flex;
+}
+
 .disc{
     margin: 0;
-    margin-left: 80px;
     padding-top: 34px;
     font-size: 64px;
     color: #009344;
@@ -111,14 +127,35 @@ p{
     padding: 0;
     margin: 0;
 }
+.centext{
+    margin-left: 48px;
+    margin-top: 92px;
+}
 .seal{
     vertical-align: top;
-    margin-left: 50px;
     padding: 0;
-    font-size: 64px;
+    font-size: 50px;
     color: #009344;
     width: 305px;
-    height: 174px;
+}
+.links{
+    display: flex;
+}
+.links .writel{
+    padding: 20px;
+    background-color: #009344;
+    border-radius: 20px;
+    margin-right: 30px  ;
+}
+.links .write{
+    color: white;  
+}
+.links .more{
+    color: #009344;
+}
+.rigbt{
+    width: 460px;
+    margin-right: 62px;
 }
 
 .line{
