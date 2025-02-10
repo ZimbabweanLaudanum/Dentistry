@@ -57,6 +57,7 @@ p{
 
 .navpanel{
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     height: 120px;
     background-color: #EBEBEB;
@@ -100,6 +101,9 @@ p{
 
 .navbar{
     margin-left: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-wrap: nowrap;
 }
 .navbar span{
@@ -174,7 +178,6 @@ p{
     align-items: center;
 }
 .links .writel{
-
     padding: 20px;
     background-color: #009344;
     border-radius: 20px;
@@ -228,6 +231,11 @@ section p{
     flex-direction: column;
     flex-wrap: nowrap;
 }
+.white p{
+    margin-bottom: 20px;
+    line-height: 24px;
+    color: #58595B;
+}
 .teeth{
     display: flex;
     flex-direction: column;
@@ -254,8 +262,20 @@ section p{
 .matter{
     margin-top: 60px;
 }
+.list{
+    margin-top: 20px;
+    line-height: 24px;
+}
 .matter .con{
     color: #58595B;
+}
+.writel {
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+    background-color: rgb(0, 147, 68);
+    margin-right: 30px;
+    border-radius: 20px;
 }
 
 .sidebar{
@@ -484,35 +504,404 @@ section p{
     line-height: 24px;
     color: #58595B;
 }
-
+.rowfield span{
+    color: rgba(0,0,0,0.6);
+}
+.rowfield .tbox{
+    margin-right: 20px;
+}
 
 .fields{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.fields div{
+.fields .colfields{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.fields div div{
+.rowfield{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.fields div div span{
-     color: rgba(0, 0, 0, 0.6);
+
+.signfields .writel .write {
+    color: white;
 }
 .tbox{
     display: flex;
     flex-direction: row;
-    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
     border-color: rgba(0, 147, 68, 0.5);
+    border-radius: 5px;
+    padding: 10px;
 }
 .tbox img{
-    width: 16;
+    width: 16px;
+    margin-right: 10px;
 }
 input{
+    font-size: 24px;
+    width: 240px;
+    border-width: 0px;
+}
+select {
+    color: rgb(196, 196, 196);
+    font-size: 24px;
+    width: 260px;
     border-color: white;
+}
+.textbox{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 900px;
+}
+.textbox span{
+    color: rgba(0,0,0,0.6);
+
+}
+.textbox input {
+    width: 840px;
+    height: 280px;
+    text-align: center;
+    text-wrap: wrap;
+}
+.chk {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.check {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.chk p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0px;
+}
+.usefull {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 1224px;
+}
+.usefull p {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(88, 89, 91);
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.usereview .writel{
+    padding: 20px;
+}
+.usereview .writel a span{
+    color: white;
+}
+.infblocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.bl1 {
+    display: flex;
+    flex-direction: column;
+    width: 398px;
+    height: 440px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 103, 56) 100%), linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%), url(../img/bl1.png);
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.artic{
+    margin-top: 30px;
+    background-color: #FF0000;
+    width: 120px;
+    text-align: center;
+}
+.infblocks a span {
+    color: white;
+}
+.bltxt {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    justify-items: end;
+}
+.bltxt p {
+    text-align: left;
+    color: white;
+    margin: 0px;
+}
+.datelink {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.infblocks a .datelink span {
+    color: rgba(255, 255, 255, 0.7);
+}
+.bl2 {
+    display: flex;
+    flex-direction: column;
+    width: 398px;
+    height: 440px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(37, 75, 104) 100%), linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 103, 56) 80%), url(../img/bl2.png);
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.events{
+    margin-top: 30px;
+    background-color: #00579F;
+    width: 120px;
+    text-align: center;
+}
+.bl3 {
+    display: flex;
+    flex-direction: column;
+    width: 398px;
+    height: 440px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(189, 130, 98) 100%), url(../img/bl3.png);
+    border-radius: 20px;
+}
+.news{
+    margin-top: 30px;
+    background-color: #7BB058;
+    width: 120px;
+    text-align: center;
+}
+.lin {
+    margin-top: 20px;
+}
+.lin span {
+    color: black;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-radius: 20px;
+    border-color: rgb(0, 147, 68);
+}
+.signing {
+    display: flex;
+    flex-direction: column;
+    margin-left: 340px;
+    margin-top: 60px;
+    width: 1224px;
+    align-items: center;
+}
+.signing p{
+    margin-bottom: 50px;
+}
+.signing h2 {
+    margin-bottom: 20px;
+}
+.signfields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 970px;
+}
+.signame {
+    margin-right: 16px;
+}
+.signfields span {
+    color: rgba(0, 0, 0, 0.6);
+}
+.signame .tbox input {
+    width: 360px;
+}
+.signphone {
+    margin-right: 16px;
+    width: 232px;
+}
+.signphone .tbox input{
+    width: 300px;
+}
+.signfields .tbox {
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+.signfields .writel{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    
+    margin: 0;
+}
+.signfields .writel .write {
+    color: white;
+}
+.doctors {
+    display: flex;
+    flex-direction: column;
+    margin-left: 340px;
+    margin-top: 60px;
+    width: 1224px;
+    align-items: center;
+}
+.doctors h2 {
+    margin-bottom: 30px;
+}
+.doctors p {
+    text-align: center;
+    line-height: 24px;
+    color: rgb(88, 89, 91);
+    text-wrap: wrap;
+}
+.shpage {
+    display: flex;
+    align-items: center;
+    width: 1224px;
+    height: 442px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+    border-color: rgb(204, 233, 218);
+    border-radius: 20px;
+    padding: 20px;
+}
+.shpaktxt {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+.shpaktxt .shpaname {
+    color: rgb(0, 147, 68);
+    font-size: 48px;
+}
+.shpakinfo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.shp {
+    display: flex;
+    flex-direction: row;
+    width: 310px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.shpakinfo .writel{
+    padding: 20px;
+    display: flex;
+    
+}
+.shpakinfo .writel a span{
+    color: white;
+}
+.shpakinfo .writel a:hover span{
+    color: white;
+}
+.docfotos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    width: 1224px;
+    justify-content: space-between;
+}
+.contactpanel {
+    margin-top: 60px;
+    padding-left: 340px;
+    background-color: rgb(36, 38, 39);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.num1 {
+    margin-right: 16px;
+}
+.contactpanel a span {
+    color: white;
+}
+.num2 {
+    margin-right: 80px;
+}
+.rev {
+    margin-right: 106px;
+}
+.sig {
+    margin-right: 120px;
+}
+.friend {
+    margin-right: 60px;
+}
+.tel {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.mainfoot {
+    display: flex;
+    height: 550px;
+    padding-left: 340px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/back.png);
+}
+.leftfoot {
+    display: flex;
+    flex-direction: column;
+    width: 582px;
+}
+.leftfoot a {
+    width: 232px;
+}
+.leftfoot .logo {
+    margin: 60px 0px 0px;
+}
+.leftfoot span {
+    margin-top: 30px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 10px;
+}
+.leftfoot p {
+    color: rgb(153, 153, 153);
+    font-size: 16px;
+    margin-bottom: 100px;
+    text-wrap: wrap;
+}
+.nava {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nava a {
+    margin-right: 20px;
+}
+.rightfoot {
+    margin-top: 100px;
+    margin-left: 160px;
+}
+.rightfoot p {
+    color: rgba(153, 153, 153, 0.5);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.ph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ph img {
+    width: 36px;
+}
+.ph span {
+    margin-left: 20px;
+    color: rgb(153, 153, 153);
+}
+.mir {
+    margin-left: 148px;
 }
