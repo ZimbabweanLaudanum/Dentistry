@@ -109,8 +109,13 @@ p{
 .navbar span{
     margin-left: 20px;
     color: black;
+    line-height: 24px;
+}
+.navbar .home{
+    margin-top: 6px;
 }
 .navbar .tel{
+    margin-top: 8px;
     margin-left: 20px;
 }
 .phones p{
@@ -277,6 +282,10 @@ section p{
     margin-right: 30px;
     border-radius: 20px;
 }
+.writel a{
+    width: max-content;
+    height: max-content;
+}
 
 .sidebar{
     width: 356px;
@@ -336,9 +345,14 @@ section p{
 .child{
     margin-top: 20px;
 }
+
+
 .action{
     margin-top: 60px;
+    width: 294px;
 }
+
+
 .act1{
     display: flex;
     flex-direction: column;
@@ -352,9 +366,11 @@ section p{
     border-radius: 20px;
     background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act1.png");
 }
+
 .act1 p{
     color: white;
     line-height: 24px;
+    text-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
@@ -714,7 +730,7 @@ select {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-end;
-    width: 970px;
+    
 }
 .signame {
     margin-right: 16px;
@@ -722,12 +738,18 @@ select {
 .signfields span {
     color: rgba(0, 0, 0, 0.6);
 }
+.signame .tbox{
+    padding: 20px;
+}
 .signame .tbox input {
     width: 360px;
 }
 .signphone {
     margin-right: 16px;
-    width: 232px;
+    
+}
+.signphone .tbox{
+    padding: 20px;
 }
 .signphone .tbox input{
     width: 300px;
@@ -740,8 +762,8 @@ select {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    
     margin: 0;
+    margin-top: 20px;
 }
 .signfields .writel .write {
     color: white;
@@ -762,6 +784,7 @@ select {
     line-height: 24px;
     color: rgb(88, 89, 91);
     text-wrap: wrap;
+    margin-bottom: 20px;
 }
 .shpage {
     display: flex;
@@ -774,6 +797,10 @@ select {
     border-color: rgb(204, 233, 218);
     border-radius: 20px;
     padding: 20px;
+}
+.shpak{
+    margin-left: 70px;
+    margin-right: 70px;
 }
 .shpaktxt {
     display: flex;
@@ -788,6 +815,7 @@ select {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    
 }
 .shp {
     display: flex;
@@ -796,15 +824,18 @@ select {
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
 .shpakinfo .writel{
+    margin-top: 10px;
     padding: 20px;
-    display: flex;
-    
+    display: block;
+    width: max-content;
 }
-.shpakinfo .writel a span{
+.shpakinfo .writel span{
+    margin-right: 10px;
     color: white;
 }
-.shpakinfo .writel a:hover span{
+.shpakinfo a:hover .writel span{
     color: white;
 }
 .docfotos {
