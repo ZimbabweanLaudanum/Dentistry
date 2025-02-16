@@ -131,7 +131,7 @@ p{
 .slider{
     display: flex;
     height: 500px;
-    background-color: #C4C4C4;
+    background-color: #EBEBEB;
     padding-left: 235px;
     padding-right: 235px;
     vertical-align: top;
@@ -352,122 +352,53 @@ section p{
     width: 294px;
 }
 
-
-.act1{
+.action a{
     display: flex;
+    width: 294px;
+    height: 346px;
     flex-direction: column;
     justify-content: flex-end;
+    box-sizing: border-box;
+    
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
     margin-top: 20px;
-    width: 294px;
-    height: 346px;
     border-radius: 20px;
-    background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act1.png");
 }
 
-.act1 p{
+
+
+.action a:nth-child(2){
+    background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act1.png");
+}
+.action a:nth-child(3){
+    background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act2.png");
+}
+.action a:nth-child(4){
+    background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act3.png");
+}
+.action a:nth-child(5){
+    background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act4.png");
+}
+.act p{
     color: white;
     line-height: 24px;
+    display: flex;
     text-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
 }
-.act1 .more{
+.act .more{
     display: flex;
     align-items: center;
 }
-.act1 .more span{
+.act .more span{
     color: white;
     margin-right: 10px;
 }
- 
-.act2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    width: 294px;
-    height: 346px;
-    border-radius: 20px;
-    background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act2.png");
-}
-.act2 p{
-    color: white;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-}
-.act2 .more{
-    display: flex;
-    align-items: center;
-}
-.act2 .more span{
-    color: white;
-    margin-right: 10px;
-}
-.act3{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    width: 294px;
-    height: 346px;
-    border-radius: 20px;
-    background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act3.png");
-}
-.act3 p{
-    color: white;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-}
-.act3 .more{
-    display: flex;
-    align-items: center;
-}
-.act3 .more span{
-    color: white;
-    margin-right: 10px;
-}
-.act4{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    width: 294px;
-    height: 346px;
-    border-radius: 20px;
-    background-image: linear-gradient(rgba(0,0,0,0) 50%, rgba(0, 103, 56, 1) 100%), url("../img/act4.png");
-}
-.act4 p{
-    color: white;
-    line-height: 24px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-}
-.act4 .more{
-    display: flex;
-    align-items: center;
-}
-.act4 .more span{
-    color: white;
-    margin-right: 10px;
-}
+
 
 
 .reviews{
@@ -536,6 +467,10 @@ section p{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-top: 5px;
+}
+.fields .textbox{
+    margin-top: 5px;
 }
 .rowfield{
     display: flex;
@@ -553,7 +488,11 @@ section p{
     border-style: solid;
     border-color: rgba(0, 147, 68, 0.5);
     border-radius: 5px;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
 }
 .tbox img{
     width: 16px;
@@ -564,26 +503,53 @@ input{
     width: 240px;
     border-width: 0px;
 }
-select {
-    color: rgb(196, 196, 196);
+input::placeholder{
+    color: #C4C4C4;
+    font-family: Oswald;
     font-size: 24px;
-    width: 260px;
+}
+select {
+    color: #C4C4C4;
+    font-family: Oswald;
+    font-size: 24px;
+    width: 266px;
+    line-height: 24px;
+    height: 32px;
     border-color: white;
 }
+
+select option{
+    line-height: 24px;
+    color: #009344;
+}
+select option:first-child{
+    color: #C4C4C4;
+}
 .textbox{
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     width: 900px;
 }
 .textbox span{
     color: rgba(0,0,0,0.6);
+}
+.textbox textarea {
+    width: 880px;
+    height: 280px;
+    text-wrap: wrap;
+    border: 0;
+    font-family: Oswald;
+    font-size: 24px;
 
 }
-.textbox input {
-    width: 840px;
-    height: 280px;
+
+.textbox textarea::placeholder{
+    padding-top: 130px;
+    font-family: Oswald;
+    font-size: 24px;
     text-align: center;
-    text-wrap: wrap;
+    color: #C4C4C4;
 }
 .chk {
     margin-top: 20px;
@@ -621,9 +587,15 @@ select {
 }
 .usereview .writel{
     padding: 20px;
+    margin: 0;
 }
-.usereview .writel a span{
+.usereview .writel span{
+    margin-right: 10px;
     color: white;
+}
+.usereview a{
+    display: flex;
+    width: min-content;
 }
 .infblocks {
     display: flex;
@@ -765,7 +737,8 @@ select {
     margin: 0;
     margin-top: 20px;
 }
-.signfields .writel .write {
+.signfields .writel .write{
+    margin-right: 10px;
     color: white;
 }
 .doctors {
@@ -797,6 +770,7 @@ select {
     border-color: rgb(204, 233, 218);
     border-radius: 20px;
     padding: 20px;
+    box-sizing:border-box;
 }
 .shpak{
     margin-left: 70px;
@@ -820,14 +794,20 @@ select {
 .shp {
     display: flex;
     flex-direction: row;
-    width: 310px;
+    width: 300px;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-
+.shpakinfo a{
+    display: flex;
+    width: min-content;
+}
 .shpakinfo .writel{
+    margin-right: 0;
     margin-top: 10px;
     padding: 20px;
+    width: 300px;
+    box-sizing:border-box;
     display: block;
     width: max-content;
 }
