@@ -135,7 +135,6 @@ p{
 .phones a:hover p{
     color: #009344;
 }
-
 section{
     margin-left: 340px;
     margin-top: 60px;
@@ -150,73 +149,56 @@ h2{
     text-wrap: nowrap;
 }
 h3{
-    margin-top: 30px;
     font-size: 24px;
     font-family: Oswald;
     text-wrap: nowrap;
+    color: #58595B;
 }
 section p{
     text-align: justify;
     text-wrap: wrap;
     color: #58595B;
 }
-.speci{
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-}
-.pari{
+.adult{
     display: flex;
     flex-direction: column;
 }
-.speci p{
-    margin-left: 30px;
-    margin-bottom: 30px;
-}
-
-.devices{
-    margin-top: 30px;
+.doubleblock{
     display: flex;
     flex-direction: row;
 }
-
+.serblock{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
 li{
     font-family: "Oswald";
     font-size: 24px;
     color: #009344;
 }
-.list{
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
+li a{
+    font-family: "Oswald";
+    font-size: 24px;
+    color: #009344;
 }
-section img{
-    border-radius: 20px;
+.service ul{
+    list-style-type: none;
+}
+.doubleblock{
+    justify-content: space-between;
+}
+.serblock{
+    width: 560px;
+}
+.serblock img{
     border: 2px solid;
-    border-color: #009344;
-    width: 350px;
-    height: 400px;
-}
-.services{
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-}
-.services img{
-    margin-right: 60px;
-}
-.list p{
-    margin-bottom: 30px;
-}
-.citis{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-}
-.citis p{
+    border-radius: 20px;
+    color: #009344;
     margin-right: 30px;
+    height: 300px;
+    width: 280px;
 }
-
 .contactpanel {
     margin-top: 60px;
     padding-left: 340px;
