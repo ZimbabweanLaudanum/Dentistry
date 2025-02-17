@@ -156,6 +156,7 @@ p{
 .txts{
     width: 727px;
     display: flex;
+    margin-bottom: 30px;
 }
 
 .disc{
@@ -168,6 +169,7 @@ p{
     color: #009344;
     font-size: 180px;
     height: 160px;
+    line-height: 160px;
     padding: 0;
     margin: 0;
 }
@@ -553,7 +555,7 @@ select option:first-child{
 }
 
 .textbox textarea::placeholder{
-    padding-top: 130px;
+    padding-top: 140px;
     font-family: Oswald;
     font-size: 24px;
     text-align: center;
