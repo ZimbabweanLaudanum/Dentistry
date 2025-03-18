@@ -1,15 +1,3 @@
-@font-face {
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf");
-}
-@font-face {
-    font-family: "Felipa";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/Felipa/Felipa-Regular.ttf");
-}
 *{
     margin: 0;
     padding: 0;
