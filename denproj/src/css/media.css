@@ -1,0 +1,55 @@
+@media (max-width: 992px) {
+    .navpanel .navbar {
+        display: none;
+    }
+    .slider{
+        display: none;
+    }
+    .logo{
+        margin-left: 40px;
+    }
+    section{
+        margin-left: 40px;
+    }
+    .sidebar{
+        display: none;
+    }
+    .userevieiw{
+        width: 900px;
+    }
+    .infblocks{
+        flex-direction: column;
+    }
+    .infblocks a{
+        margin-top: 30px;
+    }
+    .signfields{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .signing{
+        width: 960px;
+        margin-left: 40px;
+    }
+    .usefull{
+        margin-top: 0;
+    }
+    .doctors{
+        margin-left: 40px;
+    }
+    .docfotos{
+        display: none;
+    }
+    .reviews{
+        display: none;
+    }
+    .contactpanel{
+        display: none;
+    }
+    .mainfoot{
+        padding-left: 40px;
+    }
+    .rightfoot{
+        display: none;
+    }
+}
